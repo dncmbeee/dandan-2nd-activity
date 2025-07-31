@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                 <img src="img/dandanlogo.png" alt="Logo" class="logo-img">
+                dandan's wierld
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section active">
+            <h1>My Portfolio</h1>
+            <div class="projects">
+                <div class="project-grid">
+                    <div class="project-item">
+                        <img src="img/eyes.gif" alt="Project 1" class="expandable-img">
+                        <h3>project 1</h3>
+                    </div>
+                    <div class="project-item">
+                        <img src="img/skip.gif" alt="Project 2" class="expandable-img">
+                        <h3>project 2</h3>
+                    </div>
+                    <div class="project-item">
+                        <img src="img/train.gif" alt="Project 3" class="expandable-img">
+                        <h3>project 3</h3>
+                    </div>
+                    <div class="project-item">
+                        <img src="img/bomb.gif" alt="Project 4" class="expandable-img">
+                        <h3>project 4</h3>
+                    </div>
+                    <div class="project-item">
+                        <img src="img/skull.gif" alt="Project 5" class="expandable-img">
+                        <h3>project 5</h3>
+                    </div>
+                    <div class="project-item">
+                        <img src="img/bomb.gif" alt="Project 6" class="expandable-img">
+                        <h3>project 6</h3>
+                    </div>
+                </div>
+            </div>
+            <button id="surpriseBtn" class="interactive-btn">Click for a Surprise!</button>
+            <div id="surpriseMessage" class="hidden"></div>
+        </section>
+
+        <section id="about" class="section">
+            <h1>About Me</h1>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="img/gurl.gif" alt="My Portrait" class="expandable-img">
+                </div>
+                <div class="about-text">
+                    <h2>Danica Mae Balandra</h2>
+                    <p>Student</p>
+                    <div class="personal-info">
+                        <p><strong>Age:</strong> 21</p>
+                        <p><strong>Location:</strong> GenSan City, Philippines</p>
+                        <p><strong>Education:</strong> BS in Information Technology </p>
+                        <p><strong>Skills:</strong> hmmmm... still discovering </p>
+                        <p><strong>Hobbies:</strong> wandering around </p>
+                    </div>
+                    <p class="bio">I'm an aspiring web developer with little experience in creating responsive and user-friendly websites. I love turning ideas into reality through code and design.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h1>Contact Me</h1>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p><i class="fas fa-envelope"></i> danica.mae.balandra@newbrighton.edu.ph</p>
+                    <p><i class="fas fa-phone"></i> 01100100 01100001 01101110 </p>
+                    <p><i class="fas fa-map-marker-alt"></i> GenSan City, Philippines</p>
+                    <div class="social-links">
+                        <a href="https://github.com/dncmbeee" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/danica-mae-balandra-1a80a22bb/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://web.facebook.com/danix.balandra/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2>Send a Message</h2>
+                    <form id="commentForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; dandan </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
